@@ -52,3 +52,44 @@ footer{
 
 }
 
+.search{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.search__form{
+    display: flex;
+    gap: 30px;
+}
+
+.search h2{
+    font-size: 24px;
+}
+
+.search__form input{
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.peliculas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 960px;
+    margin: 10px;
+}
+
+.peliculas__tarjeta{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.peliculas__tarjeta img{
+    width: 300px;
+}
