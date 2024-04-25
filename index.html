@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAC-MOVIES</title>
+    <title>Peliculas</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
  
 </head>
 <body>
-    <header >
-            <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">logo</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   <a class="nav-link" href="registrarse.html">Registrarse</a>
@@ -28,83 +29,27 @@
             </div>
           </nav>
     </header>
-    <main>
-        <section >
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/banner-bg.jpg" class="d-block w-100" alt="imagen">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h2>Películas y series ilimitadas en un solo lugar</h2>
-                      <p>Disfruta donde quieras. Cancela cuando quieras.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            
-        </section>
+    
+    <main class="main">
         <section class="search">
             <h2>¿Qué estas buscando para ver?</h2>
             <form class="search__form">
                 <input  type="text" placeholder="Buscar..."/>
                 <input  type="submit" value="Buscar" class="btn btn-primary">
             </form>
-           
 
         </section>
-        <hr>
-        <section >
-            <h3 >Las tendencias de hoy</h3>
-           <!--prueba columnas
-           <div class="container">
-            <div class="row">
-              <div class="col-3">.col-9</div>
-              <div class="col-5">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-              <div class="col-4">.col-6<br>Subsequent columns continue along the new line.</div>
-            </div>
-            <div class="row">
-                <div class="col-3">fila 2</div>
-                <div class="col-5">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-                <div class="col-4">.col-6<br>Subsequent columns continue along the new line.</div>
-              </div>
-          </div>
-        fin prueba  -->
 
+        <section class="main__panel">
+            <h3 >Las tendencias de hoy</h3>
             <div class="peliculas">
                 <div class="peliculas__tarjeta">
                     <a href="detalle.html">
                         <img  src="images/peli_1.jpg" alt="The Beekeeper" title="Pelicula">
                     </a>
                    <h4>The Beekeeper</h4>
-                   <p class="parrafo">Este es un <span style="color:green">parrafo</span> de prueba</p>
                 </div>
+
                 <div class="peliculas__tarjeta">
                     <a href="detalle.html">
                      <img  src="images/peli_2.jpg" alt="Badland Hunters">
@@ -130,112 +75,20 @@
                     </a>
                     <h4>Aquaman and the Lost Kingdom</h4>
                 </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_6.jpg" alt="Migration">
-                    </a>
-                    <h4>Migration</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_7.jpg" alt="Sixty Minutes">
-                    </a>
-                    
-                    <h4>Sixty Minutes</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_8.jpg" alt="Wish">
-                    </a>
-                   
-                    <h4>Wish</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_9.jpg" alt="The Masked Saint">
-                    </a>
-                  
-                    <h4>The Masked Saint</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_10.jpg" alt="Due Justice">
-                    </a>
-                   
-                    <h4>Due Justice</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_11.jpg" alt="Orion and the Darke">
-                    </a>
-                   
-                    <h4>Orion and the Dark</h4>
-                </div>
-                <div class="peliculas__tarjeta">
-                    <a href="detalle.html">
-                     <img  src="images/peli_12.jpg" alt="Genghis Khan">
-                    </a>
-                    
-                    <h4>Genghis Khan</h4>
-                </div>
             </div>
-            <button >Anterior</button>  
-            <button >Siguiente</button>
         </section>
         <hr>
-        <section >
-            <h3 >Las más aclamadas</h3>
-             <div >
-                <div >
-                    <img  src="images/aclamada_1.jpg" alt="aclamada_1">
-                </div>
-                <div >
-                    <img  src="images/aclamada_2.jpg" alt="aclamada_2">
-                </div>
-                <div >
-                    <img  src="images/aclamada_3.jpg" alt="aclamada_3">
-                </div>
-                <div >
-                    <img  src="images/aclamada_4.jpg" alt="aclamada_4">
-                </div>
-                <div >
-                    <img  src="images/aclamada_5.jpg" alt="aclamada_5">
-                </div>
-                <div >
-                    <img src="images/aclamada_6.jpg" alt="aclamada_6">
-                </div>
-                <div >
-                    <img  src="images/aclamada_7.jpg" alt="aclamada_7">
-                </div>
-                <div >
-                    <img  src="images/aclamada_8.jpg" alt="aclamada_8">
-                </div>
-                <div >
-                    <img  src="images/aclamada_9.jpg" alt="aclamada_9">
-                </div>
-                <div >
-                    <img  src="images/aclamada_10.jpg" alt="aclamada_10">
-                </div>
-                <div >
-                    <img  src="images/aclamada_11.jpg" alt="aclamada_11">
-                </div>
-                <div >
-                    <img src="images/aclamada_12.jpg" alt="aclamada_12">
-                </div>               
-            </div>
-        </section>
-
     </main>
     <footer>
-        <ul class="menu">
-            <li class="menu__item"><a href="">Términos y condiciones</a></li>
-            <li class="menu__item"><a  href="">Preguntas frecuentes</a></li>
-            <li class="menu__item"><a  href="">Ayuda</a></li>
-            <li class="menu__item"><a  href="">Administrador Peliculas</a></li>
-        </ul>    
-        <a href="#main" class="flechaArriba">
-            <img src="images/flecha-hacia-arriba.png" alt="ir arriba flecha">
-        </a>
+       <ul>
+        <li><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CjxwYXRoIGQ9Ik0gOSA0IEMgNi4yNTA0ODM5IDQgNCA2LjI1MDQ4MzkgNCA5IEwgNCA0MSBDIDQgNDMuNzQ5NTE2IDYuMjUwNDgzOSA0NiA5IDQ2IEwgMjUuODMyMDMxIDQ2IEEgMS4wMDAxIDEuMDAwMSAwIDAgMCAyNi4xNTgyMDMgNDYgTCAzMS44MzIwMzEgNDYgQSAxLjAwMDEgMS4wMDAxIDAgMCAwIDMyLjE1ODIwMyA0NiBMIDQxIDQ2IEMgNDMuNzQ5NTE2IDQ2IDQ2IDQzLjc0OTUxNiA0NiA0MSBMIDQ2IDkgQyA0NiA2LjI1MDQ4MzkgNDMuNzQ5NTE2IDQgNDEgNCBMIDkgNCB6IE0gOSA2IEwgNDEgNiBDIDQyLjY2ODQ4NCA2IDQ0IDcuMzMxNTE2MSA0NCA5IEwgNDQgNDEgQyA0NCA0Mi42Njg0ODQgNDIuNjY4NDg0IDQ0IDQxIDQ0IEwgMzMgNDQgTCAzMyAzMCBMIDM2LjgyMDMxMiAzMCBMIDM4LjIyMDcwMyAyMyBMIDMzIDIzIEwgMzMgMjEgQyAzMyAyMC40NDI1MDggMzMuMDUzMDUgMjAuMzk4OTI5IDMzLjI0MDIzNCAyMC4yNzczNDQgQyAzMy40Mjc0MTkgMjAuMTU1NzU4IDM0LjAwNTgyMiAyMCAzNSAyMCBMIDM4IDIwIEwgMzggMTQuMzY5MTQxIEwgMzcuNDI5Njg4IDE0LjA5NzY1NiBDIDM3LjQyOTY4OCAxNC4wOTc2NTYgMzUuMTMyNjQ3IDEzIDMyIDEzIEMgMjkuNzUgMTMgMjcuOTAxNTg4IDEzLjg5NjQ1MyAyNi43MTg3NSAxNS4zNzUgQyAyNS41MzU5MTIgMTYuODUzNTQ3IDI1IDE4LjgzMzMzMyAyNSAyMSBMIDI1IDIzIEwgMjIgMjMgTCAyMiAzMCBMIDI1IDMwIEwgMjUgNDQgTCA5IDQ0IEMgNy4zMzE1MTYxIDQ0IDYgNDIuNjY4NDg0IDYgNDEgTCA2IDkgQyA2IDcuMzMxNTE2MSA3LjMzMTUxNjEgNiA5IDYgeiBNIDMyIDE1IEMgMzQuMDc5MDYyIDE1IDM1LjM4NzM2IDE1LjQ1ODQ1NSAzNiAxNS43MDExNzIgTCAzNiAxOCBMIDM1IDE4IEMgMzMuODQ5MTc4IDE4IDMyLjkyNjk1NiAxOC4wOTUyIDMyLjE1MDM5MSAxOC41OTk2MDkgQyAzMS4zNzM4MjYgMTkuMTA0MDI0IDMxIDIwLjA2MTQ5MiAzMSAyMSBMIDMxIDI1IEwgMzUuNzc5Mjk3IDI1IEwgMzUuMTc5Njg4IDI4IEwgMzEgMjggTCAzMSA0NCBMIDI3IDQ0IEwgMjcgMjggTCAyNCAyOCBMIDI0IDI1IEwgMjcgMjUgTCAyNyAyMSBDIDI3IDE5LjE2NjY2NyAyNy40NjQwODggMTcuNjQ2NDUzIDI4LjI4MTI1IDE2LjYyNSBDIDI5LjA5ODQxMiAxNS42MDM1NDcgMzAuMjUgMTUgMzIgMTUgeiI+PC9wYXRoPgo8L3N2Zz4="/></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <path d="M 34.21875 5.46875 C 28.238281 5.46875 23.375 10.332031 23.375 16.3125 C 23.375 16.671875 23.464844 17.023438 23.5 17.375 C 16.105469 16.667969 9.566406 13.105469 5.125 7.65625 C 4.917969 7.394531 4.597656 7.253906 4.261719 7.277344 C 3.929688 7.300781 3.632813 7.492188 3.46875 7.78125 C 2.535156 9.386719 2 11.234375 2 13.21875 C 2 15.621094 2.859375 17.820313 4.1875 19.625 C 3.929688 19.511719 3.648438 19.449219 3.40625 19.3125 C 3.097656 19.148438 2.726563 19.15625 2.425781 19.335938 C 2.125 19.515625 1.941406 19.839844 1.9375 20.1875 L 1.9375 20.3125 C 1.9375 23.996094 3.84375 27.195313 6.65625 29.15625 C 6.625 29.152344 6.59375 29.164063 6.5625 29.15625 C 6.21875 29.097656 5.871094 29.21875 5.640625 29.480469 C 5.410156 29.742188 5.335938 30.105469 5.4375 30.4375 C 6.554688 33.910156 9.40625 36.5625 12.9375 37.53125 C 10.125 39.203125 6.863281 40.1875 3.34375 40.1875 C 2.582031 40.1875 1.851563 40.148438 1.125 40.0625 C 0.65625 40 0.207031 40.273438 0.0507813 40.71875 C -0.109375 41.164063 0.0664063 41.660156 0.46875 41.90625 C 4.980469 44.800781 10.335938 46.5 16.09375 46.5 C 25.425781 46.5 32.746094 42.601563 37.65625 37.03125 C 42.566406 31.460938 45.125 24.226563 45.125 17.46875 C 45.125 17.183594 45.101563 16.90625 45.09375 16.625 C 46.925781 15.222656 48.5625 13.578125 49.84375 11.65625 C 50.097656 11.285156 50.070313 10.789063 49.777344 10.445313 C 49.488281 10.101563 49 9.996094 48.59375 10.1875 C 48.078125 10.417969 47.476563 10.441406 46.9375 10.625 C 47.648438 9.675781 48.257813 8.652344 48.625 7.5 C 48.75 7.105469 48.613281 6.671875 48.289063 6.414063 C 47.964844 6.160156 47.511719 6.128906 47.15625 6.34375 C 45.449219 7.355469 43.558594 8.066406 41.5625 8.5 C 39.625 6.6875 37.074219 5.46875 34.21875 5.46875 Z M 34.21875 7.46875 C 36.769531 7.46875 39.074219 8.558594 40.6875 10.28125 C 40.929688 10.53125 41.285156 10.636719 41.625 10.5625 C 42.929688 10.304688 44.167969 9.925781 45.375 9.4375 C 44.679688 10.375 43.820313 11.175781 42.8125 11.78125 C 42.355469 12.003906 42.140625 12.53125 42.308594 13.011719 C 42.472656 13.488281 42.972656 13.765625 43.46875 13.65625 C 44.46875 13.535156 45.359375 13.128906 46.3125 12.875 C 45.457031 13.800781 44.519531 14.636719 43.5 15.375 C 43.222656 15.578125 43.070313 15.90625 43.09375 16.25 C 43.109375 16.65625 43.125 17.058594 43.125 17.46875 C 43.125 23.71875 40.726563 30.503906 36.15625 35.6875 C 31.585938 40.871094 24.875 44.5 16.09375 44.5 C 12.105469 44.5 8.339844 43.617188 4.9375 42.0625 C 9.15625 41.738281 13.046875 40.246094 16.1875 37.78125 C 16.515625 37.519531 16.644531 37.082031 16.511719 36.683594 C 16.378906 36.285156 16.011719 36.011719 15.59375 36 C 12.296875 35.941406 9.535156 34.023438 8.0625 31.3125 C 8.117188 31.3125 8.164063 31.3125 8.21875 31.3125 C 9.207031 31.3125 10.183594 31.1875 11.09375 30.9375 C 11.53125 30.808594 11.832031 30.402344 11.816406 29.945313 C 11.800781 29.488281 11.476563 29.097656 11.03125 29 C 7.472656 28.28125 4.804688 25.382813 4.1875 21.78125 C 5.195313 22.128906 6.226563 22.402344 7.34375 22.4375 C 7.800781 22.464844 8.214844 22.179688 8.355469 21.746094 C 8.496094 21.3125 8.324219 20.835938 7.9375 20.59375 C 5.5625 19.003906 4 16.296875 4 13.21875 C 4 12.078125 4.296875 11.03125 4.6875 10.03125 C 9.6875 15.519531 16.6875 19.164063 24.59375 19.5625 C 24.90625 19.578125 25.210938 19.449219 25.414063 19.210938 C 25.617188 18.96875 25.695313 18.648438 25.625 18.34375 C 25.472656 17.695313 25.375 17.007813 25.375 16.3125 C 25.375 11.414063 29.320313 7.46875 34.21875 7.46875 Z"></path>
+            </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+            </svg></li>
+       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
