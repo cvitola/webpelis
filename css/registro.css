@@ -80,6 +80,12 @@
     padding: 10px; 
 }
 
+#issue{
+    list-style: none;
+    font-size: 12px;
+    padding: 0;
+}
+
 /* Para corregir el desplazamiento de los select */
 .input-select option {
     background-color: rgba(0, 0, 0, 0.7); 

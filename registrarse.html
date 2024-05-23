@@ -6,13 +6,28 @@
     <title>Registro | CAC-MOVIES</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body class="bodyRegistrarse">
-    <header class="headerRegistrarse">
-        <a class="anclaLogo" href="../index.html">
-            <i class="fas fa-film"></i>
-            <span>CAC-Movies</span>
-        </a>
+    <header>
+        <nav class="navbar navbar-expand-lg justify-content-center">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" href="registrarse.html">Registrarse</a>
+                  <a class="nav-link" href="#">Contacto</a>
+                 <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
@@ -60,7 +75,8 @@
                     <div class="error-text"></div>
                 </div>
                 <div class="form-group">
-                    <input class="boton" type="submit" value="Registrarse">
+                    <ul id="issue" style="color: red;"></ul>
+                    <input class="boton" type="button" value="Registrarse" onclick="enviarDatos(event)">
                 </div>
                 <div class="form-group">
                     <a class="ayuda" href="#">Necesitas ayuda?</a>
@@ -68,5 +84,7 @@
             </form>
         </section>
     </main>
+    <script src="./js/validarFormulario.js"></script>
+    <script src="./js/api.js"></script>
 </body>
 </html>
