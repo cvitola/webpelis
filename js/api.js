@@ -15,7 +15,7 @@ const obtenerCoordenadas = (pos) => {
 
 //API OpenWeather
 const consumirAPI = async (lat,lon) => {
-    const baseURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=`
+    const baseURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=`
     const apiKey = '306395a7a86009e9ee4f4eba4504ee8f'
     
 
