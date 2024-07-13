@@ -1,7 +1,8 @@
 //Cuando carga el documento
-document.body.onload = () => {
+window.addEventListener('load', () => {
     apiNavegador();
-}
+    
+})
 //Obtengo coordenadas de la API del Navegador
 const apiNavegador = () => {
     navigator.geolocation.getCurrentPosition(obtenerCoordenadas);
@@ -31,6 +32,7 @@ const consumirAPI = async (lat,lon) => {
 //Pinto en el HTML
 const mostrarEnHeader =  (dataClima) => {
     const nav = document.querySelector('.navbar');
+    console.log("nav")
     const card = `
                     <div class='forecast'>
                         <p><strong>Localidad: </strong>${dataClima.city.name}</p>
@@ -43,5 +45,4 @@ const mostrarEnHeader =  (dataClima) => {
     nav.innerHTML += card     
 
 }
-
 

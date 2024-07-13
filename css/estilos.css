@@ -8,9 +8,9 @@
 
 :root {
     font-size:20px;
-    --rosaClaro: #FFCCDD;
-    --rosaIntermedio: #ED7EA4;
-    --rosaOscuro: #e51e63;
+    --rosaClaro: #f1ceda;
+    --rosaIntermedio: #e9b9ca;
+    --rosaOscuro: #cc6a8c;
     --claro: #FAFAFA;
 }
 
@@ -18,6 +18,8 @@ body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal; 
+    position: relative;
+    min-height: 100vh;
 }
 nav{
     background-color: var(--rosaIntermedio);
@@ -30,6 +32,9 @@ footer{
     gap: 20px;
     align-items: center;
     justify-content: space-around;
+    position: absolute; /* Fija el Footer en la parte inferior */
+    bottom: 0; /* Asegura que esté pegado al fondo */
+    width: 100%;
 }
 
 footer ul{
@@ -103,10 +108,15 @@ footer ul li{
     width: 300px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    background-color: #f1ceda;
+    margin: 25px;
 }
 
 .peliculas__tarjeta img{
     width: 300px;
+    padding: 5px;
 }
 
 .peliculas__tarjeta h4{
@@ -135,6 +145,8 @@ footer ul li{
     margin: 5px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px gray;
+    color: #353232;
+    text-align: center;
 }
 
 .forecast p{

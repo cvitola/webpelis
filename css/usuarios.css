@@ -1,0 +1,92 @@
+.usuarios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(174, 211, 198);
+    margin: 5px;
+}
+
+.usuario__tarjeta{
+    display: flex;
+    justify-content: space-around;
+    border: 0.5px solid rgb(196, 120, 120);
+    font-size: 12px;
+    width: 100%;
+}
+
+.usuarios__edicion{
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 4px;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    width: 300px; 
+    font-size: 12px;
+}
+.usuarios__edicion label {
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+.usuarios__edicion input {
+    padding: 2px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+    background-color: rgb(233, 219, 200);
+}
+.usuarios__edicion button{
+    font-size: 12px;
+    border-radius: 50%;
+    width: 32px;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+.usuarios__edicion__botonera{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    padding: 4px;
+    
+}
+.usuarios__edicion__botonera button{
+    margin: 0;
+}
+.usuarios__edicion h5{
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+label {
+    padding: 5px;
+    margin: 5px;
+    width: 90px;
+    text-align: center;
+}
+
+.usuarios__editar{
+    display: flex;
+    border: 0.5px solid rgb(122, 221, 122);
+    padding: 5px;
+    margin: 5px;
+    gap: 10px;
+    width: 100%;
+}
+
+h4{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Lato';
+}
